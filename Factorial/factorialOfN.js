@@ -1,7 +1,8 @@
 function factorial(n) {
-    // of course if a number is negative this won't work
+    // guard clause -- of course if a number is negative this won't work
     if (n < 0)
-        return -1;
+        return "Factorial is not defined for negative numbers";
+    // 
     else if (n == 0)
         return 1;
     // recursion -- reference itself 
@@ -11,6 +12,6 @@ function factorial(n) {
 }
 
 console.log(factorial(5));
-console.log(factorial(7));
-console.log(factorial(-20));
-console.log(factorial(0));
+// console.log(factorial(7));
+// console.log(factorial(-20));
+// console.log(factorial(0));
