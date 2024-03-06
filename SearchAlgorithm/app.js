@@ -23,6 +23,7 @@ console.log(binarySearch(array, 10));
 console.log(binarySearch(array, 6));
 console.log(binarySearch(array, 20));
 
+// Big-O is O(n)
 function linearSearch(arr, target) {
     for(let i = 0; i < arr.length; i++) {
         if(arr[i] === target) {
